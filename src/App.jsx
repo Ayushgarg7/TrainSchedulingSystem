@@ -1,15 +1,17 @@
 import './App.css'
 import Admin from './Components/Admin/Admin'
 import Home from './Components/Home/Home'
+import Navbar from './Components/Navbar/Navbar'
 import User from './Components/User/User'
 
 function App() {
 
   return (
     <div className='App'>
-      {/* <Home /> */}
+      <Navbar/>
+      <Home />
       {/* <Admin/> */}
-      <User/>
+      {/* <User/> */}
     </div>
   )
 }
