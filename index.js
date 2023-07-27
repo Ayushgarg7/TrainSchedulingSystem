@@ -2,10 +2,13 @@ const connectToMongodb = require('./db')
 const express = require('express')
 const Train = require('./models/Train')
 const app = express()
+const cors = require('cors')
 const port = 5000
 
 // using middleware to deal with json files
 app.use(express.json())
+
+app.use(cors())
 
 connectToMongodb();
 

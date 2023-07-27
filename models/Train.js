@@ -14,11 +14,11 @@ const TrainSchema = new Schema({
     },
 
     arrivalTime : {
-        type: Date,
+        type: String,
         required: true
     },
     departureTime : {
-        type: Date,
+        type: String,
         required: true
     },
     seats : {
