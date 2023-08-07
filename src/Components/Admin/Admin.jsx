@@ -12,7 +12,7 @@ const Admin = () => {
   
   const addTrain = async (e)=>{
     e.preventDefault();
-    const response = await fetch('http://localhost:5000/addtrain' , {
+    const response = await fetch('https://trainschedule.onrender.com/addtrain' , {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(train)

@@ -7,7 +7,7 @@ const User = () => {
     }, []);
 
     const fetchTrainData = async()=>{
-        const response = await fetch('http://localhost:5000/gettrain', {method:'GET'});
+        const response = await fetch('https://trainschedule.onrender.com/gettrain', {method:'GET'});
 
         const json = await response.json();
         setTrains(json.trains);
